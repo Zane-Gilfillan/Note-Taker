@@ -1,26 +1,3 @@
-const express = require('express');
-const path = require('path')
-const app = express();
-
-app.get('/api/notes', (req, res) => {
-
-  res.json(notes)
-
-});
-
-
-  
-
-
-
-app.use(express.static(path.join(__dirname, 'public')))
-
-const PORT = process.env.PORT || 5500;
-
-app.listen(PORT, () => console.log(`server has started on port ${PORT}`));
-
-
-
 let noteTitle;
 let noteText;
 let saveNoteBtn;
